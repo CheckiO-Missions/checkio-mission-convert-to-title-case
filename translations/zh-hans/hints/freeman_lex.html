@@ -1,0 +1,111 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        我不知道如何开始解决这个任务。
+    </div>
+    <div class="answer">
+        <p>
+            抓住一个想法💡！将给定的句子分割成不同的单词，每个单词都大写（标题第一个字符大写，其他字符小写），然后用空格将单词连接到句子中。
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        好吧，我应该从哪里开始呢？
+    </div>
+    <div class="answer">
+        <p>
+            使用<a target="_blank" href="https://www.w3schools.com/python/ref_string_split.asp">str.split()</a> 方法（不带参数）将给定句子拆分成单词。您将收到一个单词列表。
+        </p>
+        <pre class="brush: python">
+lst = sentence.split()
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        接下来要做什么？
+    </div>
+    <div class="answer">
+        <p>
+            每个单词都应使用<a target="_blank" href="https://www.w3schools.com/python/ref_string_capitalize.asp">str.capitalize()</a> 方法进行转换。使用<a target="_blank" href="https://www.w3schools.com/python/ref_func_map.asp">map()</a> 函数对每个单词执行上述方法。 
+        </p>
+        <pre class="brush: python">
+obj = map(str.capitalize, lst)
+        </pre>
+        <p>
+            <b class="code">Map</b> 函数返回一个对象，您可以将其用作其他函数的参数。
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        我还需要提示。
+    </div>
+    <div class="answer">
+        <p>
+             现在，您需要使用<a target="_blank" href="https://www.w3schools.com/python/ref_string_join.asp">str.join()</a> 方法（带空白参数）将所有大写单词连接成一个句子。 
+        </p>
+        <pre class="brush: python">
+return " ".join(obj)
+        </pre>
+        <p>您可以不使用额外的变量！</p>
+        <pre class="brush: python">
+return " ".join(map(str.capitalize, sentence.split()))
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        那么，我的最终解决方案应该是怎样的呢？
+    </div>
+    <div class="answer">
+        <p>
+            您只需将之前的所有提示连接起来，返回结果句子，然后将代码封装成函数表达式即可。强烈建议对输入和输出数据使用类型提示。
+        </p>
+        <p>下面是整个解决方案：</p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def to_title_case(sentence: str) -> str:
+
+    return " ".join(map(str.capitalize, sentence.split()))
+        </pre>
+        </div>
+        <p>点击任务菜单<b>Best Solutions</b> ，查看更多有趣的解决方案！</p>
+    </div>
+</div>
+<!-- <div class="question-answer">
+    <div class="question">
+        Show me more solutions!<br />
+        'Cause I wanna be a real 🥇 Python Ninnjaa!
+    </div>
+    <div class="answer">
+        <p>Sure, grab it!</p>
+        <p>
+            
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+
+        </pre>
+        </div>
+        <p>
+            
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+
+        </pre>
+        </div>
+        <p>Click <b>Best Solutions</b> at mission menu and see a lot of other interesting solutions!</p>
+    </div>
+</div> -->
+<div class="question-answer">
+    <div class="question">
+        谢谢！我现在知道并理解得更多了！一切正常！
+    </div>
+    <div class="answer">
+        很高兴听到这个消息 👍！
+    </div>
+</div>
+</body>

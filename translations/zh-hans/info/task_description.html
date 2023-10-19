@@ -1,0 +1,45 @@
+<!-- Describe task in general -->
+
+<p>
+    您的函数应将字符串作为输入，并将字符串中所有单词的首字母转换为大写，使字符串成为标题大小写（其他字母必须为小写）。 
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}convert-title.png" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入：</strong>原始字符串 <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出：</strong>转换后的字符串 <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+
+<p>
+    <strong>示例</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>如何使用</strong>
+    <ul>
+        <li>用于文本处理和数据规范化任务；</li>
+        <li>在用户界面中以标准大小写格式呈现文本。</li>
+    </ul>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>前提条件</strong>
+    <ul>
+        <li><i>句子 ∈ string</i>；</li>
+        <li><i>length(sentence) &gt;= 0</i>.</li>
+    </ul>
+</p>
