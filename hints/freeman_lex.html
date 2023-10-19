@@ -44,8 +44,12 @@ obj = map(str.capitalize, lst)
     </div>
     <div class="answer">
         <p>
-             Now you need to join all capitalized words back into single sentence with <a target="_blank" href="https://www.w3schools.com/python/ref_string_join.asp">str.join()</a> method with white space argument. You may do it without additional variables!
+             Now you need to join all capitalized words back into single sentence with <a target="_blank" href="https://www.w3schools.com/python/ref_string_join.asp">str.join()</a> method with white space argument. 
         </p>
+        <pre class="brush: python">
+return " ".join(obj)
+        </pre>
+        <p>You may do it without additional variables!</p>
         <pre class="brush: python">
 return " ".join(map(str.capitalize, sentence.split()))
         </pre>
