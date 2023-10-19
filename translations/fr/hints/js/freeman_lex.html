@@ -1,0 +1,115 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Je n'ai aucune idée de la manière de commencer à résoudre cette mission.
+    </div>
+    <div class="answer">
+        <p>
+            Attrapez une idée 💡! Divisez la phrase donnée en plusieurs mots, mettez une majuscule à chaque mot (le premier caractère du titre et les autres en minuscules) et réunissez les mots dans la phrase avec des espaces blancs.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, par quoi dois-je commencer?
+    </div>
+    <div class="answer">
+        <p>
+            Divisez la phrase donnée en mots distincts avec la méthode <a target="_blank" href="https://www.w3schools.com/jsref/jsref_split.asp">string.split()</a> avec l'argument de l'espace blanc. Appliquez une certaine fonction à chaque mot avec la méthode <a target="_blank" href="https://www.w3schools.com/jsref/jsref_map.asp">array.map()</a>.
+        </p>
+        <pre class="brush: javascript">
+sentence.split(' ').map(word => ...)
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Que faire ensuite?
+    </div>
+    <div class="answer">
+        <p>
+            Le premier caractère de chaque mot (<a target="_blank" href="https://www.w3schools.com/jsref/jsref_charat.asp">charAt()</a>) doit être converti en majuscules avec la méthode <a target="_blank" href="https://www.w3schools.com/jsref/jsref_touppercase.asp">string.toUpperCase()</a>.
+        </p>
+        <pre class="brush: javascript">
+word.charAt(0).toUpperCase()
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        J'ai encore besoin d'un indice.
+    </div>
+    <div class="answer">
+        <p>
+            Le reste du mot (<a target="_blank" href="https://www.w3schools.com/jsref/jsref_slice_string.asp">string.slice()</a>) doit être converti en minuscules avec <a target="_blank" href="https://www.w3schools.com/jsref/jsref_tolowercase.asp">toLowerCase()</a>.
+        </p>
+        <pre class="brush: javascript">
+word.slice(1).toLowerCase()
+        </pre>
+        <p>
+            Concaténérez maintenant les parties du mot avec <b class="code">+</b>.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Comment joindre le tout?
+    </div>
+    <div class="answer">
+        <p>
+            Oui, vous devez réunir tous les mots en majuscules en une seule phrase à l'aide de la méthode <a target="_blank" href="https://www.w3schools.com/jsref/jsref_join.asp">string.join()</a> avec l'argument de l'espace blanc.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Alors, à quoi devrait ressembler ma solution finale?
+    </div>
+    <div class="answer">
+        <p>
+            Il vous suffit de combiner tous les indices précédents, de renvoyer la phrase résultante et d'envelopper votre code dans une expression de fonction. Il est fortement recommandé d'utiliser des indices de type pour les données d'entrée et de sortie.
+        </p>
+        <p>Voici la solution complète:</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function toTitleCase(sentence: string): string {
+
+    return sentence
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join(' ');
+}
+        </pre>
+        </div>
+        <p>Cliquez sur <b>Best Solutions</b> dans le menu mission et découvrez de nombreuses autres solutions intéressantes!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Montrez-moi d'autres solutions!<br />
+        parce que je veux être un vrai 🥇 Javascript Hero!
+    </div>
+    <div class="answer">
+        <p>Bien sûr, prenez-le!</p>
+        <p>
+            Mettez toute la phrase en minuscules et remplacez chaque première lettre par une majuscule à l'aide d'expressions régulières.</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function toTitleCase(sentence: string): string {
+
+    return sentence.toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+    }
+        </pre>
+        </div>
+        <p>Cliquez sur <b>Best Solutions</b> dans le menu mission et découvrez de nombreuses autres solutions intéressantes!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Merci beaucoup! Je comprends mieux maintenant! Tout fonctionne bien!
+    </div>
+    <div class="answer">
+        Heureux de l'apprendre 👍!
+    </div>
+</div>
+</body>
