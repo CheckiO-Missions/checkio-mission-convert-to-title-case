@@ -1,0 +1,115 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Я не уявляю, як почати вирішувати цю місію.
+    </div>
+    <div class="answer">
+        <p>
+            Лови ідею 💡! Розділіть подане речення на окремі слова, напишіть кожне слово з великої літери (заголовну першу, а решту - з малої) та з'єднайте слова в речення за допомогою пробілів.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Гаразд, з чого мені почати?
+    </div>
+    <div class="answer">
+        <p>
+            Розділіть задане речення на окремі слова за допомогою методу <a target="_blank" href="https://www.w3schools.com/jsref/jsref_split.asp">string.split()</a> з аргументом пробіл. Застосуйте певну функцію до кожного слова методом <a target="_blank" href="https://www.w3schools.com/jsref/jsref_map.asp">array.map()</a>.
+        </p>
+        <pre class="brush: javascript">
+sentence.split(' ').map(word => ...)
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Що робити далі?
+    </div>
+    <div class="answer">
+        <p>
+            Перший символ кожного слова (<a target="_blank" href="https://www.w3schools.com/jsref/jsref_charat.asp">charAt()</a>) потрібно перетворити у верхній регістр методом <a target="_blank" href="https://www.w3schools.com/jsref/jsref_touppercase.asp">string.toUpperCase()</a>.
+        </p>
+        <pre class="brush: javascript">
+word.charAt(0).toUpperCase()
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Мені все ще потрібна підказка.
+    </div>
+    <div class="answer">
+        <p>
+            Решту слова (<a target="_blank" href="https://www.w3schools.com/jsref/jsref_slice_string.asp">string.slice()</a>) потрібно перетворити у нижній регістр за допомогою <a target="_blank" href="https://www.w3schools.com/jsref/jsref_tolowercase.asp">toLowerCase()</a>.
+        </p>
+        <pre class="brush: javascript">
+word.slice(1).toLowerCase()
+        </pre>
+        <p>
+            Тепер об'єднайте частини слова за допомогою <b class="code">+</b>.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Як з'єднати все разом?
+    </div>
+    <div class="answer">
+        <p>
+            Так, вам потрібно об'єднати всі слова з великої літери в одне речення за допомогою методу <a target="_blank" href="https://www.w3schools.com/jsref/jsref_join.asp">string.join()</a> з аргументом white space.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Отже, як має виглядати мій кінцевий розв'язок?
+    </div>
+    <div class="answer">
+        <p>
+            Вам просто потрібно об'єднати всі попередні підказки, повернути отримане речення і обернути ваш код у вираз функції. Наполегливо рекомендуємо використовувати підказки типів для вхідних і вихідних даних.
+        </p>
+        <p>Ось повне рішення:</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function toTitleCase(sentence: string): string {
+
+    return sentence
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join(' ');
+}
+        </pre>
+        </div>
+        <p>Натисніть <b>Best Solutions</b> в меню завдання і побачите багато інших цікавих рішень!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Покажіть мені більше рішень!<br />
+        тому що я хочу бути справжнім 🥇 Героєм Javascript!
+    </div>
+    <div class="answer">
+        <p>Звичайно, хапай!</p>
+        <p>
+            Зробіть все речення маленькими літерами і замініть кожну першу літеру на велику за допомогою регулярних виразів.</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function toTitleCase(sentence: string): string {
+
+    return sentence.toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+    }
+        </pre>
+        </div>
+        <p>Натисни <b>Best Solutions</b> в меню місії і побачиш багато інших цікавих рішень!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Дякую! Тепер я знаю і розумію більше! Все працює чудово!
+    </div>
+    <div class="answer">
+        Радий це чути 👍!
+    </div>
+</div>
+</body>

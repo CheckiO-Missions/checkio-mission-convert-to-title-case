@@ -1,0 +1,111 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Я не уявляю, як почати вирішувати цю місію.
+    </div>
+    <div class="answer">
+        <p>
+            Лови ідею 💡! Розділіть подане речення на окремі слова, напишіть кожне слово з великої літери (заголовну першу, а решту - з малої) та з'єднайте слова в речення за допомогою пробілів.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Гаразд, з чого мені почати?
+    </div>
+    <div class="answer">
+        <p>
+            Розділіть задане речення на окремі слова за допомогою методу <a target="_blank" href="https://www.w3schools.com/python/ref_string_split.asp">str.split()</a> без аргументу. Ви отримаєте список слів.
+        </p>
+        <pre class="brush: python">
+lst = sentence.split()
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Що робити далі?
+    </div>
+    <div class="answer">
+        <p>
+            Кожне слово має бути перетворено методом <a target="_blank" href="https://www.w3schools.com/python/ref_string_capitalize.asp">str.capitalize()</a>. Використовуйте функцію <a target="_blank" href="https://www.w3schools.com/python/ref_func_map.asp">map()</a>, щоб застосувати цей метод до кожного слова. 
+        </p>
+        <pre class="brush: python">
+obj = map(str.capitalize, lst)
+        </pre>
+        <p>
+            <b class="code">Map</b> функція повертає об'єкт, і ви можете використовувати його як аргумент в іншій функції.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Мені все ще потрібна підказка.
+    </div>
+    <div class="answer">
+        <p>
+             Тепер вам потрібно об'єднати всі слова з великої літери в одне речення за допомогою методу <a target="_blank" href="https://www.w3schools.com/python/ref_string_join.asp">str.join()</a> з аргументом пробіл. 
+        </p>
+        <pre class="brush: python">
+return " ".join(obj)
+        </pre>
+        <p>Ви можете зробити це без додаткових змінних!</p>
+        <pre class="brush: python">
+return " ".join(map(str.capitalize, sentence.split()))
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Отже, як має виглядати мій кінцевий розв'язок?
+    </div>
+    <div class="answer">
+        <p>
+            Вам просто потрібно об'єднати всі попередні підказки, повернути отримане речення і обернути ваш код у вираз функції. Наполегливо рекомендуємо використовувати підказки типів для вхідних і вихідних даних.
+        </p>
+        <p>Ось повне рішення:</p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def to_title_case(sentence: str) -> str:
+
+    return " ".join(map(str.capitalize, sentence.split()))
+        </pre>
+        </div>
+        <p>Натисніть <b>Best Solutions</b> в меню завдання і побачите багато інших цікавих рішень!</p>
+    </div>
+</div>
+<!-- <div class="question-answer">
+    <div class="question">
+        Show me more solutions!<br />
+        'Cause I wanna be a real 🥇 Python Ninnjaa!
+    </div>
+    <div class="answer">
+        <p>Sure, grab it!</p>
+        <p>
+            
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+
+        </pre>
+        </div>
+        <p>
+            
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+
+        </pre>
+        </div>
+        <p>Click <b>Best Solutions</b> at mission menu and see a lot of other interesting solutions!</p>
+    </div>
+</div> -->
+<div class="question-answer">
+    <div class="question">
+        Дякую! Тепер я знаю і розумію більше! Все працює чудово!
+    </div>
+    <div class="answer">
+        Радий це чути 👍!
+    </div>
+</div>
+</body>

@@ -1,0 +1,45 @@
+<!-- Describe task in general -->
+
+<p>
+    Ваша функція повинна отримати на вхід рядок і перетворити всі перші літери слів у рядку у верхній регістр, зробивши рядок заголовним (інші літери повинні бути у нижньому регістрі). 
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}convert-title.png" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Вхідні дані:</strong> Початковий рядок <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Вихідні дані:</strong> Перетворений рядок <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+
+<p>
+    <strong>Приклади:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>Як використовується:</strong>
+    <ul>
+        <li>для задач обробки тексту та нормалізації даних;</li>
+        <li>для відображення тексту в інтерфейсі користувача у стандартному форматі регістру заголовків.</li>
+    </ul>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Передумови:</strong>
+    <ul>
+        <li>речення<i>∈ ря</i>док;</li>
+        <li><i>length(sentence) &gt;= 0</i>.</li>
+    </ul>
+</p>
