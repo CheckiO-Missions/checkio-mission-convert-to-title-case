@@ -1,0 +1,45 @@
+<!-- Describe task in general -->
+
+<p>
+    Votre fonction doit prendre une chaîne en entrée et convertir toutes les premières lettres des mots de la chaîne en majuscules, ce qui fait de la chaîne un cas de titre (les autres lettres doivent être en minuscules). 
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}convert-title.png" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Chaîne originale <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Sortie:</strong> Chaîne convertie <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>Comment l'utiliser:</strong>
+    <ul>
+        <li>pour le traitement de texte et les tâches de normalisation des données;</li>
+        <li>pour rendre le texte dans l'interface utilisateur dans un format standard de majuscules.</li>
+    </ul>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Conditions préalables:</strong>
+    <ul>
+        <li><i>phrase ∈ string</i>;</li>
+        <li><i>length(sentence) &gt;= 0</i>.</li>
+    </ul>
+</p>
