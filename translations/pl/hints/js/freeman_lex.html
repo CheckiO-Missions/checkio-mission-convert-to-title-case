@@ -1,0 +1,115 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Nie mam pojęcia, jak zacząć rozwiązywać tę misję.
+    </div>
+    <div class="answer">
+        <p>
+            Proszę złapać pomysł 💡! Proszę podzielić podane zdanie na osobne wyrazy, napisać każdy wyraz wielką literą (pierwszy znak tytułu, a pozostałe małą) i połączyć wyrazy z powrotem w zdanie za pomocą białych spacji.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, od czego powinienem zacząć?
+    </div>
+    <div class="answer">
+        <p>
+            Proszę podzielić podane zdanie na osobne słowa za pomocą metody <a target="_blank" href="https://www.w3schools.com/jsref/jsref_split.asp">string.split()</a> z argumentem białej spacji. Proszę zastosować określoną funkcję do każdego słowa za pomocą metody <a target="_blank" href="https://www.w3schools.com/jsref/jsref_map.asp">array.map()</a>.
+        </p>
+        <pre class="brush: javascript">
+sentence.split(' ').map(word => ...)
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Co robić dalej?
+    </div>
+    <div class="answer">
+        <p>
+            Pierwszy znak każdego słowa (<a target="_blank" href="https://www.w3schools.com/jsref/jsref_charat.asp">charAt()</a>) musi zostać zamieniony na duże litery za pomocą metody <a target="_blank" href="https://www.w3schools.com/jsref/jsref_touppercase.asp">string.toUpperCase()</a>.
+        </p>
+        <pre class="brush: javascript">
+word.charAt(0).toUpperCase()
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Nadal potrzebuję podpowiedzi.
+    </div>
+    <div class="answer">
+        <p>
+            Resztę słowa (<a target="_blank" href="https://www.w3schools.com/jsref/jsref_slice_string.asp">string.slice()</a>) proszę zamienić na małe litery za pomocą <a target="_blank" href="https://www.w3schools.com/jsref/jsref_tolowercase.asp">toLowerCase()</a>.
+        </p>
+        <pre class="brush: javascript">
+word.slice(1).toLowerCase()
+        </pre>
+        <p>
+            Teraz proszę połączyć części słowa za pomocą <b class="code">+</b>.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Jak połączyć wszystkie razem?
+    </div>
+    <div class="answer">
+        <p>
+            Tak, proszę połączyć wszystkie słowa pisane wielką literą z powrotem w jedno zdanie za pomocą metody <a target="_blank" href="https://www.w3schools.com/jsref/jsref_join.asp">string.join()</a> z argumentem białej spacji.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Jak więc powinno wyglądać moje ostateczne rozwiązanie?
+    </div>
+    <div class="answer">
+        <p>
+            Wystarczy połączyć wszystkie poprzednie podpowiedzi, zwrócić wynikowe zdanie i zawinąć kod w wyrażenie funkcyjne. Używanie podpowiedzi typu dla danych wejściowych i wyjściowych jest wysoce zalecane.
+        </p>
+        <p>Oto całe rozwiązanie:</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function toTitleCase(sentence: string): string {
+
+    return sentence
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join(' ');
+}
+        </pre>
+        </div>
+        <p>Proszę kliknąć <b>Best Solutions</b> w menu misji i zobaczyć wiele innych ciekawych rozwiązań!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Proszę pokazać mi więcej rozwiązań!<br />
+        bo chcę być prawdziwym 🥇 Javascript Hero!
+    </div>
+    <div class="answer">
+        <p>Jasne, proszę pobrać!</p>
+        <p>
+            Proszę zamienić całe zdanie na małe litery i zastąpić każdą pierwszą literę wielką przy użyciu wyrażeń regularnych.</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function toTitleCase(sentence: string): string {
+
+    return sentence.toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+    }
+        </pre>
+        </div>
+        <p>Proszę kliknąć <b>Best Solutions</b> w menu misji i zobaczyć wiele innych ciekawych rozwiązań!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Dzięki! Teraz wiem i rozumiem więcej! Wszystko działa dobrze!
+    </div>
+    <div class="answer">
+        Miło mi to słyszeć 👍!
+    </div>
+</div>
+</body>
