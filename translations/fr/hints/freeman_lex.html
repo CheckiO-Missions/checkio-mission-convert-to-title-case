@@ -1,0 +1,111 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Je n'ai aucune idée de la manière de commencer à résoudre cette mission.
+    </div>
+    <div class="answer">
+        <p>
+            Attrapez une idée 💡! Divisez la phrase donnée en plusieurs mots, mettez une majuscule à chaque mot (le premier caractère du titre et les autres en minuscules) et réunissez les mots dans la phrase avec des espaces blancs.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, par quoi dois-je commencer?
+    </div>
+    <div class="answer">
+        <p>
+            Divisez la phrase donnée en plusieurs mots avec la méthode <a target="_blank" href="https://www.w3schools.com/python/ref_string_split.asp">str.split()</a> sans argument. Vous obtenez une liste de mots.
+        </p>
+        <pre class="brush: python">
+lst = sentence.split()
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Que faire ensuite?
+    </div>
+    <div class="answer">
+        <p>
+            Chaque mot doit être converti avec la méthode <a target="_blank" href="https://www.w3schools.com/python/ref_string_capitalize.asp">str.capitalize()</a>. Utilisez la fonction <a target="_blank" href="https://www.w3schools.com/python/ref_func_map.asp">map()</a> pour appliquer la méthode ci-dessus à chaque mot. 
+        </p>
+        <pre class="brush: python">
+obj = map(str.capitalize, lst)
+        </pre>
+        <p>
+            <b class="code">Map</b> la fonction  renvoie un objet que vous pouvez utiliser comme argument dans une autre fonction.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        J'ai encore besoin d'un indice.
+    </div>
+    <div class="answer">
+        <p>
+             Vous devez maintenant réunir tous les mots en majuscules en une seule phrase à l'aide de la méthode <a target="_blank" href="https://www.w3schools.com/python/ref_string_join.asp">str.join()</a> avec l'argument de l'espace blanc. 
+        </p>
+        <pre class="brush: python">
+return " ".join(obj)
+        </pre>
+        <p>Vous pouvez le faire sans variables supplémentaires!</p>
+        <pre class="brush: python">
+return " ".join(map(str.capitalize, sentence.split()))
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Alors, à quoi devrait ressembler ma solution finale?
+    </div>
+    <div class="answer">
+        <p>
+            Il vous suffit de combiner tous les indices précédents, de renvoyer la phrase obtenue et d'envelopper votre code dans une expression de fonction. Il est fortement recommandé d'utiliser des indices de type pour les données d'entrée et de sortie.
+        </p>
+        <p>Voici la solution complète:</p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def to_title_case(sentence: str) -> str:
+
+    return " ".join(map(str.capitalize, sentence.split()))
+        </pre>
+        </div>
+        <p>Cliquez sur <b>Best Solutions</b> dans le menu mission et découvrez de nombreuses autres solutions intéressantes!</p>
+    </div>
+</div>
+<!-- <div class="question-answer">
+    <div class="question">
+        Show me more solutions!<br />
+        'Cause I wanna be a real 🥇 Python Ninnjaa!
+    </div>
+    <div class="answer">
+        <p>Sure, grab it!</p>
+        <p>
+            
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+
+        </pre>
+        </div>
+        <p>
+            
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+
+        </pre>
+        </div>
+        <p>Click <b>Best Solutions</b> at mission menu and see a lot of other interesting solutions!</p>
+    </div>
+</div> -->
+<div class="question-answer">
+    <div class="question">
+        Merci beaucoup! Je sais et je comprends mieux maintenant! Tout fonctionne bien!
+    </div>
+    <div class="answer">
+        Heureux de l'apprendre 👍!
+    </div>
+</div>
+</body>
