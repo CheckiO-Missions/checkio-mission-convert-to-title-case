@@ -1,0 +1,111 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Nie mam pojęcia, jak zacząć rozwiązywać tę misję.
+    </div>
+    <div class="answer">
+        <p>
+            Proszę złapać pomysł 💡! Proszę podzielić podane zdanie na osobne wyrazy, napisać każdy wyraz wielką literą (pierwszy znak tytułu, a pozostałe małą) i połączyć wyrazy z powrotem w zdanie za pomocą białych spacji.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, od czego powinienem zacząć?
+    </div>
+    <div class="answer">
+        <p>
+            Proszę podzielić podane zdanie na osobne słowa za pomocą metody <a target="_blank" href="https://www.w3schools.com/python/ref_string_split.asp">str.split()</a> bez argumentu. Otrzymają Państwo listę słów.
+        </p>
+        <pre class="brush: python">
+lst = sentence.split()
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Co robić dalej?
+    </div>
+    <div class="answer">
+        <p>
+            Każde słowo powinno zostać przekonwertowane za pomocą metody <a target="_blank" href="https://www.w3schools.com/python/ref_string_capitalize.asp">str.capitalize()</a>. Proszę użyć funkcji <a target="_blank" href="https://www.w3schools.com/python/ref_func_map.asp">map()</a>, aby zaimplementować powyższą metodę do każdego słowa. 
+        </p>
+        <pre class="brush: python">
+obj = map(str.capitalize, lst)
+        </pre>
+        <p>
+            <b class="code">Map</b> funkcja zwraca obiekt i można go użyć jako argumentu w innej funkcji.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Nadal potrzebuję podpowiedzi.
+    </div>
+    <div class="answer">
+        <p>
+             Teraz musi Pan połączyć wszystkie słowa pisane wielką literą z powrotem w jedno zdanie za pomocą metody <a target="_blank" href="https://www.w3schools.com/python/ref_string_join.asp">str.join()</a> z argumentem białej spacji. 
+        </p>
+        <pre class="brush: python">
+return " ".join(obj)
+        </pre>
+        <p>Może Pan to zrobić bez dodatkowych zmiennych!</p>
+        <pre class="brush: python">
+return " ".join(map(str.capitalize, sentence.split()))
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Jak więc powinno wyglądać moje ostateczne rozwiązanie?
+    </div>
+    <div class="answer">
+        <p>
+            Wystarczy połączyć wszystkie poprzednie podpowiedzi, zwrócić wynikowe zdanie i zawinąć kod w wyrażenie funkcyjne. Używanie podpowiedzi typu dla danych wejściowych i wyjściowych jest wysoce zalecane.
+        </p>
+        <p>Oto całe rozwiązanie:</p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def to_title_case(sentence: str) -> str:
+
+    return " ".join(map(str.capitalize, sentence.split()))
+        </pre>
+        </div>
+        <p>Proszę kliknąć <b>Best Solutions</b> w menu misji i zobaczyć wiele innych ciekawych rozwiązań!</p>
+    </div>
+</div>
+<!-- <div class="question-answer">
+    <div class="question">
+        Show me more solutions!<br />
+        'Cause I wanna be a real 🥇 Python Ninnjaa!
+    </div>
+    <div class="answer">
+        <p>Sure, grab it!</p>
+        <p>
+            
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+
+        </pre>
+        </div>
+        <p>
+            
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+
+        </pre>
+        </div>
+        <p>Click <b>Best Solutions</b> at mission menu and see a lot of other interesting solutions!</p>
+    </div>
+</div> -->
+<div class="question-answer">
+    <div class="question">
+        Dzięki! Teraz wiem i rozumiem więcej! Wszystko działa jak należy!
+    </div>
+    <div class="answer">
+        Miło mi to słyszeć 👍!
+    </div>
+</div>
+</body>
