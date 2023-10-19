@@ -15,10 +15,10 @@
     </div>
     <div class="answer">
         <p>
-            Split the given sentence into separate words with <a target="_blank" href="https://www.w3schools.com/python/ref_string_split.asp">str.split()</a> method without argument.
+            Split the given sentence into separate words with <a target="_blank" href="https://www.w3schools.com/python/ref_string_split.asp">str.split()</a> method without argument. You receive a list of words.
         </p>
         <pre class="brush: python">
-sentence.split()
+lst = sentence.split()
         </pre>
     </div>
 </div>
@@ -31,8 +31,11 @@ sentence.split()
             Every word should be converted with <a target="_blank" href="https://www.w3schools.com/python/ref_string_capitalize.asp">str.capitalize()</a> method. Use <a target="_blank" href="https://www.w3schools.com/python/ref_func_map.asp">map()</a> function to implement above method to every word. 
         </p>
         <pre class="brush: python">
-map(str.capitalize, sentence.split())
+obj = map(str.capitalize, lst)
         </pre>
+        <p>
+            <b class="code">Map</b> function returns an object and you may use it as an argument in some other function.
+        </p>
     </div>
 </div>
 <div class="question-answer">
@@ -41,10 +44,10 @@ map(str.capitalize, sentence.split())
     </div>
     <div class="answer">
         <p>
-            <b class="code">Map</b> function returns an object and you may use it as an argument in some other function. Now you need to join all capitalized words back into single sentence with <a target="_blank" href="https://www.w3schools.com/python/ref_string_join.asp">str.join()</a> method with white space argument.
+             Now you need to join all capitalized words back into single sentence with <a target="_blank" href="https://www.w3schools.com/python/ref_string_join.asp">str.join()</a> method with white space argument. You may do it without additional variables!
         </p>
         <pre class="brush: python">
-" ".join(map(str.capitalize, sentence.split()))
+return " ".join(map(str.capitalize, sentence.split()))
         </pre>
     </div>
 </div>
