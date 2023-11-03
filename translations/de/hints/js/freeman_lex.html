@@ -1,0 +1,115 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Ich habe keine Ahnung, wie ich mit der Lösung dieser Aufgabe beginnen soll.
+    </div>
+    <div class="answer">
+        <p>
+            Fangen Sie eine Idee 💡! Teilen Sie den vorgegebenen Satz in einzelne Wörter auf, schreiben Sie jedes Wort groß (den ersten Buchstaben des Titels und die anderen klein) und fügen Sie die Wörter mit Leerzeichen wieder zum Satz zusammen.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, womit soll ich anfangen?
+    </div>
+    <div class="answer">
+        <p>
+            Teilen Sie den gegebenen Satz mit der Methode <a target="_blank" href="https://www.w3schools.com/jsref/jsref_split.asp">string.split()</a> in einzelne Wörter mit dem Argument Leerzeichen auf. Wenden Sie eine bestimmte Funktion auf jedes Wort mit der Methode <a target="_blank" href="https://www.w3schools.com/jsref/jsref_map.asp">array.map()</a> an.
+        </p>
+        <pre class="brush: javascript">
+sentence.split(' ').map(word => ...)
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Was ist als nächstes zu tun?
+    </div>
+    <div class="answer">
+        <p>
+            Das erste Zeichen eines jeden Wortes (<a target="_blank" href="https://www.w3schools.com/jsref/jsref_charat.asp">charAt()</a>) muss mit der Methode <a target="_blank" href="https://www.w3schools.com/jsref/jsref_touppercase.asp">string.toUpperCase()</a> in Großbuchstaben umgewandelt werden.
+        </p>
+        <pre class="brush: javascript">
+word.charAt(0).toUpperCase()
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich brauche noch einen Hinweis.
+    </div>
+    <div class="answer">
+        <p>
+            Der Rest des Wortes (<a target="_blank" href="https://www.w3schools.com/jsref/jsref_slice_string.asp">string.slice()</a>) muss mit <a target="_blank" href="https://www.w3schools.com/jsref/jsref_tolowercase.asp">toLowerCase()</a> in Kleinbuchstaben umgewandelt werden.
+        </p>
+        <pre class="brush: javascript">
+word.slice(1).toLowerCase()
+        </pre>
+        <p>
+            Verketten Sie nun Teile des Wortes mit <b class="code">+</b>.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Wie kann man alles zusammenfügen?
+    </div>
+    <div class="answer">
+        <p>
+            Ja, Sie müssen alle großgeschriebenen Wörter mit der Methode <a target="_blank" href="https://www.w3schools.com/jsref/jsref_join.asp">string.join()</a> und dem Argument Leerzeichen wieder zu einem einzigen Satz zusammenfügen.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Wie sollte also meine endgültige Lösung aussehen?
+    </div>
+    <div class="answer">
+        <p>
+            Sie müssen nur alle vorherigen Hinweise verbinden, den resultierenden Satz zurückgeben und Ihren Code in einen Funktionsausdruck verpacken. Die Verwendung von Typ-Hinweisen für Eingabe- und Ausgabedaten wird dringend empfohlen.
+        </p>
+        <p>Hier ist die gesamte Lösung:</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function toTitleCase(sentence: string): string {
+
+    return sentence
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join(' ');
+}
+        </pre>
+        </div>
+        <p>Klicken Sie auf <b>Best Solutions</b> im Menü Mission und sehen Sie sich viele andere interessante Lösungen an!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Zeigen Sie mir mehr Lösungen!<br />
+        denn ich möchte ein echter 🥇 Javascript-Held sein!
+    </div>
+    <div class="answer">
+        <p>Klar, greifen Sie zu!</p>
+        <p>
+            Machen Sie den ganzen Satz klein und ersetzen Sie jeden Anfangsbuchstaben mit Hilfe von regulären Ausdrücken durch einen Großbuchstaben.</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function toTitleCase(sentence: string): string {
+
+    return sentence.toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+    }
+        </pre>
+        </div>
+        <p>Klicken Sie auf <b>Best Solutions</b> im Menü Mission und sehen Sie sich viele andere interessante Lösungen an!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Vielen Dank! Ich weiß und verstehe jetzt mehr! Alles funktioniert einwandfrei!
+    </div>
+    <div class="answer">
+        Freut mich zu hören 👍!
+    </div>
+</div>
+</body>
