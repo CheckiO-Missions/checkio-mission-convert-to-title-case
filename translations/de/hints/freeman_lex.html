@@ -1,0 +1,111 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Ich habe keine Ahnung, wie ich mit der Lösung dieser Aufgabe beginnen soll.
+    </div>
+    <div class="answer">
+        <p>
+            Fangen Sie eine Idee 💡! Teilen Sie den vorgegebenen Satz in einzelne Wörter auf, schreiben Sie jedes Wort groß (den ersten Buchstaben des Titels und die anderen klein) und fügen Sie die Wörter mit Leerzeichen wieder zum Satz zusammen.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, womit soll ich anfangen?
+    </div>
+    <div class="answer">
+        <p>
+            Zerlegen Sie den angegebenen Satz in einzelne Wörter mit der Methode <a target="_blank" href="https://www.w3schools.com/python/ref_string_split.asp">str.split()</a> ohne Argument. Sie erhalten eine Liste von Wörtern.
+        </p>
+        <pre class="brush: python">
+lst = sentence.split()
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Was ist als nächstes zu tun?
+    </div>
+    <div class="answer">
+        <p>
+            Jedes Wort sollte mit der Methode <a target="_blank" href="https://www.w3schools.com/python/ref_string_capitalize.asp">str.capitalize()</a> konvertiert werden. Verwenden Sie die Funktion <a target="_blank" href="https://www.w3schools.com/python/ref_func_map.asp">map()</a>, um die obige Methode auf jedes Wort anzuwenden. 
+        </p>
+        <pre class="brush: python">
+obj = map(str.capitalize, lst)
+        </pre>
+        <p>
+            <b class="code">Map</b> die Funktion gibt ein Objekt zurück, das Sie als Argument in einer anderen Funktion verwenden können.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich brauche noch einen Hinweis.
+    </div>
+    <div class="answer">
+        <p>
+             Jetzt müssen Sie alle großgeschriebenen Wörter mit der Methode <a target="_blank" href="https://www.w3schools.com/python/ref_string_join.asp">str.join()</a> mit dem Argument Leerzeichen wieder zu einem einzigen Satz zusammenfügen. 
+        </p>
+        <pre class="brush: python">
+return " ".join(obj)
+        </pre>
+        <p>Sie können dies ohne zusätzliche Variablen tun!</p>
+        <pre class="brush: python">
+return " ".join(map(str.capitalize, sentence.split()))
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Wie sollte also meine endgültige Lösung aussehen?
+    </div>
+    <div class="answer">
+        <p>
+            Sie müssen nur alle vorherigen Hinweise verbinden, den resultierenden Satz zurückgeben und Ihren Code in einen Funktionsausdruck verpacken. Die Verwendung von Typ-Hinweisen für Eingabe- und Ausgabedaten wird dringend empfohlen.
+        </p>
+        <p>Hier ist die gesamte Lösung:</p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def to_title_case(sentence: str) -> str:
+
+    return " ".join(map(str.capitalize, sentence.split()))
+        </pre>
+        </div>
+        <p>Klicken Sie auf <b>Best Solutions</b> im Menü Mission und sehen Sie sich viele andere interessante Lösungen an!</p>
+    </div>
+</div>
+<!-- <div class="question-answer">
+    <div class="question">
+        Show me more solutions!<br />
+        'Cause I wanna be a real 🥇 Python Ninnjaa!
+    </div>
+    <div class="answer">
+        <p>Sure, grab it!</p>
+        <p>
+            
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+
+        </pre>
+        </div>
+        <p>
+            
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+
+        </pre>
+        </div>
+        <p>Click <b>Best Solutions</b> at mission menu and see a lot of other interesting solutions!</p>
+    </div>
+</div> -->
+<div class="question-answer">
+    <div class="question">
+        Vielen Dank! Ich weiß und verstehe jetzt mehr! Alles funktioniert einwandfrei!
+    </div>
+    <div class="answer">
+        Freut mich zu hören 👍!
+    </div>
+</div>
+</body>
