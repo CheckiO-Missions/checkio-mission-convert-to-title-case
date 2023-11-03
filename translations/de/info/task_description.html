@@ -1,0 +1,45 @@
+<!-- Describe task in general -->
+
+<p>
+    Ihre Funktion sollte eine Zeichenkette als Eingabe nehmen und alle Anfangsbuchstaben der Wörter in der Zeichenkette in Großbuchstaben umwandeln, so dass die Zeichenkette zu einem Titel wird (die anderen Buchstaben müssen klein geschrieben sein). 
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}convert-title.png" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Ursprüngliche Zeichenkette <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Konvertierte Zeichenfolge <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>Wie es verwendet wird:</strong>
+    <ul>
+        <li>für die Textverarbeitung und die Normalisierung von Daten;</li>
+        <li>für das Rendern von Text in der Benutzeroberfläche in einem Standardformat für Groß- und Kleinschreibung.</li>
+    </ul>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Vorbedingungen:</strong>
+    <ul>
+        <li><i>satz ∈ string</i>;</li>
+        <li><i>length(satz) &gt;= 0</i>.</li>
+    </ul>
+</p>
